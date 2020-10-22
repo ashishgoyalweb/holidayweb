@@ -1,0 +1,37 @@
+@import "./../../variable.scss";
+
+&.hotel {
+  .trip {
+    .tInfo {
+      justify-content: space-between;
+      .dFrom {
+        width: 35%;
+
+        input[type="text"] {
+          width: 94%;
+        }
+      }
+      .date {
+        &::after {
+          bottom: 28px;
+        }
+      }
+
+      .traveller {
+        .travellerInfo {
+          li {
+            input[type="button"] {
+              @include inputButton(14px, 5px 10px);
+              text-transform: capitalize;
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+
+      .btn {
+        width: 17%;
+      }
+    }
+  }
+}

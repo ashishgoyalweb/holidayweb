@@ -1,0 +1,203 @@
+@import "../../../variable.scss";
+.booking {
+  background: #272c33;
+  margin: 15px;
+  width: calc(100% - 30px);
+  border-radius: 5px;
+  display: flex;
+
+  .lft {
+    width: 150px;
+    ul {
+      padding: 0;
+      margin: 60px 0 0 0;
+      li {
+        list-style: none;
+        padding: 10px 20px;
+        margin: 0 0 15px 5px;
+        display: block;
+        border: 1px solid rgba(120, 130, 140, 0.13);
+        text-align: center;
+        background-color: #263238;
+        font-weight: 700;
+
+        &:hover {
+          color: $white;
+          border-color: $Aqua;
+          background-color: $Aqua;
+        }
+      }
+    }
+  }
+  .rgt {
+    width: calc(100% - 150px);
+
+    .booking-wrapper {
+      margin: 10px;
+      padding: 10px;
+      background-color: #222830;
+      padding: 15px;
+      border-radius: 5px;
+      height: 100%;
+
+      h4 {
+        color: $Aqua;
+        font-size: 16px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+        padding: 0 0 8px 5px;
+      }
+
+      .bookingRow {
+        margin-bottom: 10px;
+        display: flex;
+        .label {
+          width: 170px;
+          padding-top: 8px;
+          span {
+            font-size: 12px;
+          }
+        }
+        .input {
+          width: calc(100% - 170px);
+        }
+      }
+
+      &.pax {
+        width: 100%;
+        .addpax {
+          margin-bottom: 15px;
+          display: flex;
+
+          input[type="text"] {
+            width: 160px;
+            margin: 0 10px 0 0;
+          }
+
+          .remove {
+            color: $danger;
+            background: #1c0b1c;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 8px;
+            cursor: pointer;
+          }
+        }
+
+        .btn {
+          text-align: right;
+          width: 100%;
+        }
+      }
+
+      &.flight {
+        .flightInfo {
+          overflow-x: scroll;
+
+          table {
+            width: 1500px;
+            border-collapse: collapse;
+            border: none;
+
+            thead {
+              tr {
+                th {
+                  border: 1px solid #383f48;
+                  padding: 8px 12px;
+                  text-align: center;
+
+                  &:nth-of-type(1) {
+                    width: 35px;
+                  }
+                  &:nth-of-type(2),
+                  &:nth-of-type(12) {
+                    width: 150px;
+                  }
+                  &:nth-of-type(3),
+                  &:nth-of-type(4) {
+                    width: 200px;
+                  }
+                  &:nth-of-type(5),
+                  &:nth-of-type(6),
+                  &:nth-of-type(10),
+                  &:nth-of-type(11) {
+                    width: 100px;
+                  }
+                  &:nth-of-type(7),
+                  &:nth-of-type(8) {
+                    width: 80px;
+                  }
+                  &:nth-of-type(9) {
+                    width: 120px;
+                  }
+                  &:nth-of-type(13) {
+                    width: 20px;
+                  }
+                }
+              }
+            }
+            tbody {
+              tr {
+                &:hover {
+                  background-color: #272c33;
+                }
+                td {
+                  padding: 8px 12px;
+                  border: 1px solid #383f48;
+
+                  input[type="text"] {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        label {
+          vertical-align: top;
+          margin-right: 10px;
+        }
+
+        .note {
+          margin-top: 20px;
+          width: 100%;
+
+          input[type="text"] {
+            width: 300px;
+          }
+        }
+
+        .flightAmount {
+          margin-top: 20px;
+
+          h4 {
+            margin: 15px 0;
+          }
+
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+
+            th {
+              border: 1px solid #383f48;
+              padding: 8px 12px;
+              text-align: center;
+            }
+
+            tr {
+              td {
+                padding: 8px 12px;
+                border: 1px solid #383f48;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
